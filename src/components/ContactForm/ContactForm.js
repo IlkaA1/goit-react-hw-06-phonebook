@@ -24,7 +24,7 @@ const ContactForm = () => {
     const allName = contacts.find(contact => contact.name === nameValue);
 
     if (allName) {
-      return alert(`${name} is already in contacts`);
+      return alert(`${nameValue} is already in contacts`);
     }
 
     dispatch(addContact(newContact));
